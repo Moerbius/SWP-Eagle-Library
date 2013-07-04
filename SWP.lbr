@@ -279,6 +279,29 @@ Antenna Type: LTCC Chip Antenna</description>
 <smd name="9" x="9.6" y="-7.4" dx="1.3" dy="2" layer="1" rot="R270"/>
 <smd name="8" x="-10.1" y="-7.3" dx="1.3" dy="2" layer="1" rot="R270"/>
 </package>
+<<<<<<< HEAD
+=======
+<package name="RFM69SMDLITE">
+<wire x1="2.35" y1="6.4" x2="-2.65" y2="6.4" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="6.4" x2="2.35" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="3.2" x2="-2.65" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-4.8" x2="-5.5" y2="-4.8" width="0.2032" layer="21"/>
+<wire x1="-5.5" y1="-4.8" x2="-5.5" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="-5.5" y1="-1.3" x2="-2" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-1.3" x2="-2" y2="-4.8" width="0.2032" layer="21"/>
+<wire x1="-2.65" y1="6.4" x2="-2.65" y2="3.2" width="0.2032" layer="21"/>
+<smd name="10" x="9.6" y="-5.4" dx="1.3" dy="2" layer="1" rot="R270"/>
+<smd name="12" x="9.6" y="-1.4" dx="1.3" dy="2" layer="1" rot="R270"/>
+<smd name="13" x="9.6" y="0.6" dx="1.3" dy="2" layer="1" rot="R270"/>
+<smd name="14" x="9.6" y="2.6" dx="1.3" dy="2" layer="1" rot="R270"/>
+<smd name="15" x="9.6" y="4.6" dx="1.3" dy="2" layer="1" rot="R270"/>
+<smd name="2" x="-10.1" y="4.6" dx="1.3" dy="2" layer="1" rot="R270"/>
+<text x="-2.3" y="4.4" size="0.8" layer="21" ratio="15">Crystal</text>
+<text x="-3.3" y="-2.7" size="0.8" layer="21" ratio="15" rot="R180">IC</text>
+<smd name="9" x="9.6" y="-7.4" dx="1.3" dy="2" layer="1" rot="R270"/>
+<smd name="8" x="-10.1" y="-7.3" dx="1.3" dy="2" layer="1" rot="R270"/>
+</package>
+>>>>>>> Added RFM69LITE for use with Moteinos
 </packages>
 <symbols>
 <symbol name="RFM12">
@@ -462,6 +485,7 @@ Antenna Type: LTCC Chip Antenna</description>
 <text x="54.61" y="-6.35" size="3.048" layer="94">Production</text>
 </symbol>
 <symbol name="RFM69">
+<<<<<<< HEAD
 <wire x1="-17.98" y1="17.88" x2="-17.98" y2="-15.14" width="0.254" layer="94"/>
 <wire x1="-17.98" y1="-15.14" x2="17.58" y2="-15.14" width="0.254" layer="94"/>
 <wire x1="17.58" y1="-15.14" x2="17.58" y2="17.88" width="0.254" layer="94"/>
@@ -484,6 +508,46 @@ Antenna Type: LTCC Chip Antenna</description>
 <pin name="DIO0" x="20.32" y="0" length="short" rot="R180"/>
 <pin name="GND@2" x="-20.52" y="-10.06" length="short" direction="pwr"/>
 <pin name="NC" x="20.32" y="10.16" length="short" direction="pwr" rot="R180"/>
+=======
+<text x="-17.98" y="16.102" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.98" y="-20.22" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="15.24" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<pin name="3.3V" x="-20.32" y="12.7" length="short" direction="pwr" swaplevel="1"/>
+<pin name="NSS" x="-20.32" y="5.08" length="short" direction="in"/>
+<pin name="MOSI" x="-20.32" y="2.54" length="short" direction="in"/>
+<pin name="MISO" x="-20.32" y="0" length="short" direction="out"/>
+<pin name="SCK" x="-20.32" y="-2.54" length="short" direction="in"/>
+<pin name="GND@2" x="-20.32" y="-15.24" length="short" direction="pwr"/>
+<pin name="GND@1" x="-20.32" y="-12.7" length="short" direction="pwr"/>
+<pin name="DIO5" x="20.32" y="-15.24" length="short" rot="R180"/>
+<pin name="DIO4" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="DIO3" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="DIO2" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="DIO1" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="DIO0" x="20.32" y="-2.54" length="short" rot="R180"/>
+<pin name="RESET" x="20.32" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="RC" x="20.32" y="7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="ANA" x="20.32" y="12.7" length="short" rot="R180"/>
+</symbol>
+<symbol name="RFM69LITE">
+<text x="-17.98" y="16.102" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.98" y="-20.22" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="15.24" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<pin name="3.3V" x="-20.32" y="12.7" length="short" direction="pwr" swaplevel="1"/>
+<pin name="NSS" x="-20.32" y="5.08" length="short" direction="in"/>
+<pin name="MOSI" x="-20.32" y="2.54" length="short" direction="in"/>
+<pin name="MISO" x="-20.32" y="0" length="short" direction="out"/>
+<pin name="SCK" x="-20.32" y="-2.54" length="short" direction="in"/>
+<pin name="GND@1" x="-20.32" y="-12.7" length="short" direction="pwr"/>
+<pin name="DIO0" x="20.32" y="-2.54" length="short" rot="R180"/>
+<pin name="ANA" x="20.32" y="12.7" length="short" rot="R180"/>
+>>>>>>> Added RFM69LITE for use with Moteinos
 </symbol>
 </symbols>
 <devicesets>
@@ -593,8 +657,13 @@ The Link Technologies SP Series Splatch antenna is a low-cost, embeddable planar
 <connect gate="G$1" pin="GND@2" pad="11"/>
 <connect gate="G$1" pin="MISO" pad="13"/>
 <connect gate="G$1" pin="MOSI" pad="14"/>
+<<<<<<< HEAD
 <connect gate="G$1" pin="NC" pad="16"/>
 <connect gate="G$1" pin="NSS" pad="15"/>
+=======
+<connect gate="G$1" pin="NSS" pad="15"/>
+<connect gate="G$1" pin="RC" pad="16"/>
+>>>>>>> Added RFM69LITE for use with Moteinos
 <connect gate="G$1" pin="RESET" pad="1"/>
 <connect gate="G$1" pin="SCK" pad="12"/>
 </connects>
@@ -604,6 +673,31 @@ The Link Technologies SP Series Splatch antenna is a low-cost, embeddable planar
 </device>
 </devices>
 </deviceset>
+<<<<<<< HEAD
+=======
+<deviceset name="RFM69LITE">
+<gates>
+<gate name="G$1" symbol="RFM69LITE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM69SMDLITE">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="8"/>
+<connect gate="G$1" pin="ANA" pad="10"/>
+<connect gate="G$1" pin="DIO0" pad="2"/>
+<connect gate="G$1" pin="GND@1" pad="9"/>
+<connect gate="G$1" pin="MISO" pad="13"/>
+<connect gate="G$1" pin="MOSI" pad="14"/>
+<connect gate="G$1" pin="NSS" pad="15"/>
+<connect gate="G$1" pin="SCK" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+>>>>>>> Added RFM69LITE for use with Moteinos
 </devicesets>
 </library>
 </drawing>

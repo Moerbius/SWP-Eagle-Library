@@ -11,3 +11,6 @@ Changelog:
                 
 28-06-2013 -> Adicionado os seguintes simbolos:
                 - RFM69
+
+04-07-2013 -> Adicionado os seguintes simbolos:
+                - RFM69LITE
